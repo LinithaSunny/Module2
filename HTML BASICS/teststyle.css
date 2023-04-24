@@ -1,0 +1,18 @@
+.navcontent{  float:left; height:500px; width:100%;  margin-top:-30px; margin-top:30px;}
+.nav { float:left; height:500px; width:20%;  background-color:antiquewhite; color:white;}
+.content { float:left; height:500px; width:80%;  background-color:bisque; color:white; text-align:center;}
+
+
+
+.menu {  float:left; width: 97%;  height: 60px; background-color: orange;  color:white;font-size:30px ;margin-top:0px; }
+.menu ul { overflow: hidden; z-index: 1000; position: absolute; }
+.menu li a { display: block;color:white;text-align: center;font-size:22px; font-weight:bold;text-decoration: none;  padding: 10px; }
+.menu li  { float: left;list-style: none;width: 90px;  color:white;text-align:center;font-size:22px; font-weight:bold; padding: 10px; }
+
+
+
+.menu li a:hover  { background-color:pink; }
+
+.menu li u li a:hover{
+    background: pink;
+}

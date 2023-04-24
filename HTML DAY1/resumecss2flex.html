@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            header {
+                height: 75px;
+            }
+
+            header,
+            article,
+            aside,
+            footer {
+                border: 1px solid #000;
+            }
+
+            main {
+                display: flex;
+                flex-direction: row;
+                flex: auto;
+                background-color: cadetblue;
+                justify-content: center;
+            }
+
+            article {
+                flex: auto;
+            }
+
+            aside {
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Linitha Sunny</h1>
+        </header>
+
+        <main>
+            <aside>Recent History</aside>
+            <article>My Credentials</article>
+            <aside>My Testmonials</aside>
+        </main>
+    </body>
+</html>

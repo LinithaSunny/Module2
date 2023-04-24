@@ -1,0 +1,27 @@
+ @SpringBootConfiguration Annotation
+
+It is a class-level annotation that is part of the Spring Boot framework. It implies that a class provides Spring Boot application configuration. It can be used as an alternative to Spring’s standard @Configuration annotation so that configuration can be found automatically. Most Spring Boot Applications use @SpringBootConfiguration via @SpringBootApplication. If an application uses @SpringBootApplication, it is already using @SpringBootConfiguration.
+
+@EnableAutoConfiguration Annotation
+
+
+This annotation auto-configures the beans that are present in the classpath. It simplifies the developer’s work by assuming the required beans from the classpath and configure it to run the application. This annotation is part of the spring boot framework. For example, when we illustrate the spring-boot-starter-web dependency in the classpath, Spring boot auto-configures Tomcat, and Spring MVC. The package of the class declaring the @EnableAutoConfiguration annotation is considered as the default. Therefore, we need to apply the @EnableAutoConfiguration annotation in the root package so that every sub-packages and class can be examined.
+
+
+@ComponentScan Annotation
+
+@ComponentScan tells Spring in which packages you have annotated classes that should be managed by Spring. So, for example, if you have a class annotated with @Controller which is in a package that is not scanned by Spring, you will not be able to use it as a Spring controller. So we can say @ComponentScan enables Spring to scan for things like configurations, controllers, services, and other components that are defined. Generally, @ComponentScan annotation is used with @Configuration annotation to specify the package for Spring to scan for components.
+
+
+
+@EnableAutoConfiguration – This enables Spring Boot’s autoconfiguration mechanism. 
+Auto-configuration refers to creating beans automatically by scanning the classpath.
+
+@ComponentScan – Typically, in a Spring application, annotations like @Component, @Configuration, @Service, @Repository are specified on classes to mark them as Spring beans. 
+The @ComponentScan annotation basically tells Spring Boot to scan the current package and its sub-packages in order to identify annotated classes and configure 
+them as Spring beans. Thus, it designates the current package as the root package for component scanning.
+
+@Configuration –
+ Designates the class as a configuration class for Java configuration. 
+In addition to beans configured via component scanning, an application may desire to configure some additional beans via the @Bean annotation as demonstrated here. 
+Thus, the return value of methods having the @Bean annotation in this class are registered as beans.

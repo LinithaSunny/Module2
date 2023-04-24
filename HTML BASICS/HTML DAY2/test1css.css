@@ -1,0 +1,63 @@
+
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+body
+{
+    border-top:rgb(grey,white, cadetblue);
+    border-style: solid;
+    border-color: brown;
+    border-width: 3px;
+    background-color: antiquewhite;
+
+}
+
+div{
+    width: "200px";
+    height: "100px";
+    border: 10px;
+    border-color: darkgoldenrod;
+    padding: 20px;
+    margin: 10px;
+}
+
+#first
+{
+    border-style: dashed;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#second
+{
+    border-style: double;
+    font-family: 'Fasthand', cursive;
+}
+    
+
+#third
+{
+    border-style: inherit;
+    font-family: 'Alkatra', cursive;
+}
+    
+
+.p1
+{
+    font-size: large;
+}
+
+.first-para
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+span
+{
+    color: blue;
+}
+
